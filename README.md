@@ -8,7 +8,7 @@ LukiyanK Platform repository
 - Добыйвил init контейнер.
 - После активации маницеста создался рабочий pod&
     - kubectl apply -f web-pod.yaml
-- Прокин порты для доступа к сервису в поде.
+- Прокинул порты для доступа к сервису в поде.
     - kubectl port-forward pod/web 8000:8000
 - Получил манифест для frontend.
     - kubectl run frontend --image avtandilko/hipster-frontend:v0.0.1 --restart=Never --dry-run -o yaml > frontend-pod.yaml
