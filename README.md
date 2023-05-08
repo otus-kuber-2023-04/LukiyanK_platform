@@ -5,6 +5,7 @@ LukiyanK Platform repository
  	docker tag my-apache2_2:latest luliyan/for_hw_otus:latest
  	docker push luliyan/for_hw_otus:latest 
 2. Написал манифест web-pod.yaml для k8s по запуску контейнера.
+  2.1 Добыйвил init контейнер.
 3. После активации маницеста создался рабочий pod&
 	kubectl apply -f web-pod.yaml
 4. Прокин порты для доступа к сервису в поде.
