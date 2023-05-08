@@ -1,9 +1,9 @@
 # LukiyanK_platform
 LukiyanK Platform repository
 1. Создал контейнер опубликован в публичной репе.
- 	docker build -t my-apache2_2 .
- 	docker tag my-apache2_2:latest luliyan/for_hw_otus:latest
- 	docker push luliyan/for_hw_otus:latest 
+	docker build -t my-apache2_2 .
+	docker tag my-apache2_2:latest luliyan/for_hw_otus:latest
+	docker push luliyan/for_hw_otus:latest 
 2. Написал манифест web-pod.yaml для k8s по запуску контейнера.
   2.1 Добыйвил init контейнер.
 3. После активации маницеста создался рабочий pod&
