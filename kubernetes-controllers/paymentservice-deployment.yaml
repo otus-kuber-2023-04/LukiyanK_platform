@@ -1,10 +1,10 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata:
-  name: paymentservicev1
+  name: paymentservice
   labels:
-    app: paymentservicep1
-    tier: paymentservicet1
+    app: paymentservice
+    tier: paymentservice
 spec:
   replicas: 3 
   selector:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: luliyan/for_hw_otus:v0.0.1 
+        image: luliyan/frontend:v0.0.2 
         env:
           - name: PORT
             value: "8080"
