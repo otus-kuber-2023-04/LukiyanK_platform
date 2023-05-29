@@ -6,6 +6,7 @@
 
 Добавлены minio-statefulset.yaml и minio-headless-service.yaml
 Добавлен secret.yaml, в minio-statefulset.yaml добалено использование секрета.
+
 Как запустить проект:
 
 kubectl apply -f kubernetes-volumes
