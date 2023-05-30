@@ -9,12 +9,12 @@ spec:
   replicas: 3 
   selector:
     matchLabels:
-      tier: paymentservicel2
+      tier: paymentservicel
   template:
     metadata:
       labels:
-        tier: paymentservicel2
-        app: paymentservicel2
+        tier: paymentservicel
+        app: paymentservicel
     spec:
       containers:
       - name: server
