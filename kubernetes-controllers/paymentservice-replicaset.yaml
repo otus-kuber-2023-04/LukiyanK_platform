@@ -9,12 +9,12 @@ spec:
   replicas: 3 
   selector:
     matchLabels:
-      tier: frontend
+      tier: paymentservice
   template:
     metadata:
       labels:
-        tier: frontend
-        app: frontend
+        tier: paymentservice
+        app: paymentservice
     spec:
       containers:
       - name: server
