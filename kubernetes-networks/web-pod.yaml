@@ -3,18 +3,21 @@ kind: Pod
 metadata:
   name: web
   labels:
-    app: webapp 
+    app: web 
 spec:
   volumes:
   - name: app
     emptyDir: {}
   containers: 
-    - name: web-my
+    - name: web
       image: luliyan/for_hw_otus:latest
       readinessProbe:
         httpGet:
-          path: /index.html
+#          path: /index.html
+          path: /
           port: 80
+      livenessProbe:
+        tcpSocket: { port: 8000 }
       volumeMounts:
         - name: app
           mountPath: /app
