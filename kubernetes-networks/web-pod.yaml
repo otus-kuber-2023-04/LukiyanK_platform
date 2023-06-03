@@ -13,9 +13,9 @@ spec:
       image: luliyan/for_hw_otus:latest
       readinessProbe:
         httpGet:
-#          path: /index.html
-          path: /
-          port: 80
+          path: /index.html
+#          path: /
+          port: 8000
       livenessProbe:
         tcpSocket: { port: 8000 }
       volumeMounts:
@@ -23,7 +23,7 @@ spec:
           mountPath: /app
   initContainers:
   - name: init-myservice
-    image: busybox:1.26.0
+    image: busybox:1.32
     command: ['sh', '-c', 'wget -O- https://tinyurl.com/otus-k8s-intro | sh']
     volumeMounts: 
       - name: app
