@@ -30,6 +30,7 @@
 
 	kubectl port-forward deployments/prometheus-deployment 9090:9090
 
-<img width="1661" alt="Screenshot 2023-06-25 at 02 04 07" src="https://github.com/otus-kuber-2023-04/LukiyanK_platform/kubernetes-monitoring/screen/f2d4f8e1-d9c5-4a32-8679-3fa46c038cb3">
+<img width="1661" alt="scr1.png" src="https://github.com/otus-kuber-2023-04/LukiyanK_platform/blob/kubernetes-monitoring/kubernetes-monitoring/screenshot/scr1.png">
+<img width="1661" alt="scr2.png" src="https://github.com/otus-kuber-2023-04/LukiyanK_platform/blob/kubernetes-monitoring/kubernetes-monitoring/screenshot/scr2.png">
 
 Добавил lable ДЗ
